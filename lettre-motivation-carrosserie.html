@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettre de motivation - Candidature Carrossier-peintre CFC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #D22730; /* Rouge automobile */
+            --secondary-color: #2C3E50; /* Bleu foncé */
+            --accent-color: #F39C12; /* Orange */
+            --light-bg: #F5F7FA;
+            --dark-text: #333;
+            --light-text: #6c757d;
+            --white: #fff;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+            letter-spacing: 0.3px;
+            padding: 2rem 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .letter-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            box-shadow: 0 0 30px rgba(0,0,0,0.08);
+            border-radius: 4px;
+            overflow: hidden;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .letter-header {
+            padding: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .letter-body {
+            padding: 2rem;
+        }
+
+        .letter-footer {
+            padding: 2rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .sender-info {
+            margin-bottom: 2rem;
+        }
+
+        .recipient-info {
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .carrosserie-name {
+            color: var(--primary-color);
+            font-weight: 700;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .letter-title {
+            color: var(--primary-color);
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .letter-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        .paragraph {
+            text-align: justify;
+            margin-bottom: 1.2rem;
+        }
+
+        .signature {
+            font-style: italic;
+            font-weight: 500;
+            text-align: right;
+            margin-top: 2rem;
+        }
+
+        .border-highlight {
+            border: 1px solid rgba(0,0,0,0.05);
+            border-left: 3px solid var(--primary-color);
+            padding: 0.5rem 1rem;
+            background-color: rgba(245, 247, 250, 0.6);
+            margin: 1.5rem 0;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .nav-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 3px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: none;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--primary-color);
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+            color: var(--white);
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                margin: 0;
+            }
+
+            .letter-container {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-buttons {
+                display: none;
+            }
+
+            @page {
+                margin: 1.5cm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container letter-container">
+        <div class="letter-header">
+            <div class="row">
+                <div class="col-md-6 sender-info">
+                    <span class="mb-2 d-block">Rayan Fuchs</span>
+                    <p class="mb-0">
+                        Adresse : Ferney-Voltaire, France<br>
+                        Tél : +41 76 200 51 93<br>
+                        Email : rayan@fuchs-gva.ch
+                    </p>
+                </div>
+                <div class="col-md-6 recipient-info text-md-end">
+                    <span class="carrosserie-name">CARROSSERIE DES NATIONS SA</span>
+                    <p class="mb-0">
+                        Avenue Louis-Pictet 3<br>
+                        1214 Vernier (GE)<br>
+                        Suisse
+                    </p>
+                </div>
+            </div>
+            <p class="text-end mt-4">
+                Ferney-Voltaire, le 7 mai 2024
+            </p>
+        </div>
+        
+        <div class="letter-body">
+            <h1 class="letter-title">Candidature pour un apprentissage de Carrossier-peintre CFC</h1>
+            
+            <p class="paragraph">
+                Madame, Monsieur,
+            </p>
+
+            <p class="paragraph">
+                Actuellement élève en seconde au Lycée International de Ferney-Voltaire, je me permets de vous adresser ma candidature pour un apprentissage de Carrossier-peintre CFC au sein de votre établissement pour la rentrée 2025.
+            </p>
+
+            <p class="paragraph">
+                Passionné par l'univers automobile depuis mon plus jeune âge, je suis particulièrement attiré par la dimension artistique et technique du métier de carrossier-peintre. La transformation d'un véhicule abîmé en une œuvre aux finitions parfaites représente pour moi un défi passionnant que je souhaite relever. Bien que novice dans ce domaine, j'ai récemment réalisé mon premier projet de modélisation 3D d'une Lamborghini, ce qui m'a permis de découvrir l'importance des lignes et des proportions dans l'esthétique automobile.
+            </p>
+
+            <div class="border-highlight">
+                <p class="mb-0">
+                    À travers cette formation, j'aspire à acquérir toutes les compétences nécessaires au métier : techniques de redressage de tôles, préparation des surfaces, application de peinture et finitions de qualité. Je suis pleinement conscient que j'ai tout à apprendre, mais ma motivation et ma volonté de progresser sont grandes. Je suis particulièrement enthousiaste à l'idée de pouvoir développer à la fois des compétences techniques et un sens esthétique dans un métier qui exige précision et savoir-faire.
+                </p>
+            </div>
+
+            <p class="paragraph">
+                Les qualités que je peux apporter à votre entreprise sont :
+            </p>
+            <ul>
+                <li>Une réelle <span class="highlight">passion</span> pour l'automobile et l'esthétique des véhicules</li>
+                <li>Une grande <span class="highlight">motivation à apprendre</span> et à progresser dans ce métier</li>
+                <li>Une <span class="highlight">capacité d'apprentissage</span> rapide et une attitude positive</li>
+                <li>Un <span class="highlight">esprit d'équipe</span> et une volonté de m'intégrer pleinement à votre structure</li>
+                <li>Un <span class="highlight">désir sincère</span> de me former auprès de professionnels expérimentés</li>
+            </ul>
+
+            <p class="paragraph">
+                La Carrosserie des Nations est reconnue pour son savoir-faire et la qualité de ses prestations dans la région genevoise. Rejoindre votre équipe serait pour moi l'opportunité idéale de débuter ma formation auprès de professionnels expérimentés, d'acquérir les bases solides du métier et de développer les compétences nécessaires à cette profession.
+            </p>
+
+            <p class="paragraph">
+                Je reste à votre entière disposition pour un entretien qui me permettrait de vous exposer plus en détail ma motivation et mon projet professionnel. Je vous remercie par avance de l'attention que vous porterez à ma candidature et vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+            </p>
+
+            <p class="signature">
+                Rayan Fuchs
+            </p>
+        </div>
+        
+        <div class="letter-footer">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn">
+                    <i class="fas fa-arrow-left me-2"></i> Retour au CV
+                </a>
+                <a href="#" class="nav-btn ms-2" style="background-color: var(--secondary-color);" onclick="window.print(); return false;">
+                    <i class="fas fa-print me-2"></i> Imprimer
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
